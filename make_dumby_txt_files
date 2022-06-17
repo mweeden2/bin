@@ -1,0 +1,10 @@
+#! /bin/bash
+N=$1
+INDEX=0
+ 
+while [ $INDEX -lt $N ]
+do
+  echo "some content for file"$INDEX > file$INDEX.txt
+
+  INDEX=$(($INDEX+1))
+done 

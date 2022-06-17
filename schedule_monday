@@ -1,0 +1,1 @@
+cat ~/desktop/schedule.txt | grep -v "(F)\|(Tu)\|(W)\|(Th)\|(FTu)\|(FW)\|(FTh)\|(TuW)\|(TuTh)\|(WTh)\|(FTuW)\|(FTuTh)\|(FWTh)\|(TuWTh)\|(FTuWTh)" | sed 's/m.........-/m -/' > ~/desktop/schedule_today.txt

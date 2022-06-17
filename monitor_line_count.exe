@@ -1,0 +1,11 @@
+sw=1
+
+while :
+do
+    if [ "$sw"=1 ]; then printf "-"; fi
+	wc -l $1
+	sleep $2
+    sw=$(($sw+1))
+    sw=$(($sw%2))
+    printf "\e[1A"
+done
